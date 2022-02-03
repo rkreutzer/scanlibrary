@@ -21,12 +21,12 @@
         </activity>
 
         <provider
-            android:name="androidx.core.content.FileProvider"
+            android:name="androidx.core.content.CustomFileProvider"
             android:authorities="${applicationId}.com.scanlibrary.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:name="android.support.CUSTOM_FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths"/>
         </provider>
     </application>
